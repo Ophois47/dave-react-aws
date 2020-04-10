@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import { ChatManager, TokenProvider } from '@pusher/chatkit-client';
 import './style.css';
+import './index.html';
 
 const roomId = 980114
 
@@ -80,7 +81,7 @@ class SendMessageForm extends React.Component {
   constructor() {
     super()
     this.state = {
-      message: ''
+      message: 'Holy Frijoles it almost works!'
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -116,7 +117,7 @@ class SendMessageForm extends React.Component {
 }
 
 function Title() {
-  return <p className="title">Dave's Wonderful Chat Show</p>
+  return <p className="title">Dave's Wonderful AWS-ReactJS Chat Show</p>
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
