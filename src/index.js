@@ -1,9 +1,10 @@
 /** Replace these with your own API keys, username and roomId from Chatkit  */
 import ReactDOM from 'react-dom';
-const testToken = "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/dfaf1e22-2d33-45c9-b4f8-31f634621d24/token"
-const instanceLocator = "v1:us1:dfaf1e22-2d33-45c9-b4f8-31f634621d24"
-const roomId = 9806194
-const username = 'DPetnick89'
+import React from 'react';
+import { ChatManager, TokenProvider } from '@pusher/chatkit-client';
+
+const roomId = 980114
+
 
 class App extends React.Component {
     constructor() {
@@ -15,13 +16,11 @@ class App extends React.Component {
     } 
     
     componentDidMount() {
-        const chatManager = new Chatkit.ChatManager({
-            instanceLocator: instanceLocator,
-            userId: 'somerando',
-            tokenProvider: new Chatkit.TokenProvider({
-                url: testToken
-            })
-        })
+      const chatManager = new ChatManager({
+        instanceLocator: 'v1:us1:80215247-1df3-4956-8ba8-9744ffd12161',
+        userId: 'sarah',
+        tokenProvider: new TokenProvider({ url: 'your.auth.url' })
+      })
         
         chatManager.connect()
         .then(currentUser => {
