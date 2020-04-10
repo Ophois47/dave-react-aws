@@ -20,7 +20,7 @@ const DUMMY_DATA = [
   
     render() {
       return (
-        <div className="app">
+        <div className="Chat">
           <Title />
           <MessageList messages={this.state.messages}/>
           <SendMessageForm />

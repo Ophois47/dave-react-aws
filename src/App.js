@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './Chat.js';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           Dominate React
         </a>
       </header>
+    </div>
+    <div>
+      <Chat />
     </div>
   );
 }
