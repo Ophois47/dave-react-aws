@@ -8,7 +8,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Dave's first AWS application connecting
+        </p>
+        <p>
+          a ReactJS app, and its corresponding Git Repository. Yay!
         </p>
         <a
           className="App-link"
@@ -16,7 +19,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Dominate React
         </a>
       </header>
     </div>
