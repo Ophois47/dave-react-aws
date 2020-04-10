@@ -24,9 +24,6 @@ function App() {
         </a>
       </header>
     </div>
-    <div>
-      <Chat />
-    </div>
   );
 }
 

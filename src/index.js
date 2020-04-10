@@ -1,4 +1,5 @@
 /** Replace these with your own API keys, username and roomId from Chatkit  */
+import ReactDOM from 'react-dom';
 const testToken = "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/dfaf1e22-2d33-45c9-b4f8-31f634621d24/token"
 const instanceLocator = "v1:us1:dfaf1e22-2d33-45c9-b4f8-31f634621d24"
 const roomId = 9806194
