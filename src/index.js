@@ -1,10 +1,9 @@
-/** Replace these with your own API keys, username and roomId from Chatkit  */
 import ReactDOM from 'react-dom';
 import React from 'react';
 import { ChatManager, TokenProvider } from '@pusher/chatkit-client';
+import './style.css';
 
 const roomId = 980114
-
 
 class App extends React.Component {
     constructor() {
